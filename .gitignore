@@ -5,3 +5,7 @@ bats-mock
 bats-support
 bats-assert
 bats-file
+
+# Mac stuffs
+
+.DS_Store

@@ -14,3 +14,17 @@ source test_helper.sh
   unstub curl
 }
 
+@test 'assert()' {
+  touch "${TMPDIR}/test.log"
+  assert [ -e "$TMPDIR/test.log" ]
+  # clean up
+  rm "$TMPDIR/test.log"
+}
+
+@test 'fail() with pipe - should fail' {
+  echo 'this test always fails' | fail
+}
+
+@test 'assert_file_exist() - should fail' {
+  assert_file_exist /path/to/non-existent-file
+}
