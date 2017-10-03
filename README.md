@@ -6,7 +6,7 @@ Making a safe space to play with `bats` and friends.
 
 Clone these repos or a fork of same, to the root of the project, don't worry they are listed in the `.gitignore`.
 
-https://github.com/sstephenson/bats
+https://github.com/bats-core/bats-core
 
 https://github.com/jasonkarns/bats-mock
 
@@ -19,7 +19,7 @@ https://github.com/ztombol/bats-file
 To get things working without actually installing `bats` you just need it in your path. From the root of the filder something like this will get you set up to work.
 
 ```
-export PATH="$PATH:$(pwd)/bats/bin"
+export PATH="$PATH:$(pwd)/bats-core/bin"
 ```
 
 ### Running the example test

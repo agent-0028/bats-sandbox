@@ -1,6 +1,6 @@
 
 # ignoring bats and friends repos
-bats
+bats-core
 bats-mock
 bats-support
 bats-assert

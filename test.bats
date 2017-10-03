@@ -28,3 +28,7 @@ source test_helper.sh
 @test 'assert_file_exist() - should fail' {
   assert_file_exist /path/to/non-existent-file
 }
+
+@test 'testing skippy' {
+  skip 'why am I skipping?'
+}
